@@ -1,0 +1,34 @@
+POST http://localhost:8000/products
+Content-Type:  application/json
+
+{
+  "name": "produto 1",
+  "price": 12.00
+}
+
+### 
+GET http://localhost:8000/products/0a7335cf-d180-4885-92f8-3211bdb0af32
+Content-Type: application/json
+
+
+### 
+PUT  http://localhost:8000/products/6bb6cde3-f52f-4426-adfe-7cf430f39970
+Content-Type: application/json
+
+{
+  "name": "produto atualizado",
+  "price": 777.00
+}
+
+###
+DELETE http://localhost:8000/products/a779ae26-2e72-4de2-b9ce-c94b29bca256
+Content-Type: application/json
+
+###
+GET  http://localhost:8000/products?page=1&limit=30
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NjYzNzY0NjksInN1YiI6IjFiNzc3M2M1LTgxZmYtNGVmNS05M2E4LTg2OGQ5NGNhYjM3MSJ9.P2uJ5S9-dg1gofxJ3aD-Jf8b4DuRkOTJfX7XSVAi8bs
+
+{
+  "email": "teste@teste.com",
+  "password": "123"
+}

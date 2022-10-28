@@ -1,0 +1,6 @@
+go test -coverprofile=coverage.out  => gera um arquivo e mostra no terminal a cobertura de test
+go tool cover -html=coverage.out    => abre no browser o codigo coberto e o arquivo .out deve existir
+go test -bench=.
+go test -bench=. -run=^#
+go test -bench=. -run=^# -benchmem
+go test -bench=. -run=^# -count=10 -benchtime=5s
